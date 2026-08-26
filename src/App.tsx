@@ -7,7 +7,7 @@ function App() {
     <div className="text-base leading-base text-dark-grey min-h-screen bg-white flex flex-col">
       <Header />
 
-      <main>
+      <main className="grow">
         <MainRouter />
       </main>
 

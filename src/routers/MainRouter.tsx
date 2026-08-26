@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router";
+import Home from "../pages/Home";
 
 function MainRouter() {
   return (
     <Routes>
-      <Route index />
+      <Route index element={<Home />} />
     </Routes>
   )
 }

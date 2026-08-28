@@ -24,7 +24,7 @@ function Footer() {
 
         <button 
           type="button" 
-          className="bg-white rounded-lg w-38 h-14 uppercase text-dark-grey font-medium text-[15px] leading-5.5 tracking-[1px]"
+          className="bg-white rounded-lg w-38 h-14 uppercase font-medium text-[15px] leading-5.5 tracking-[1px]"
         >
           Get in touch
         </button>

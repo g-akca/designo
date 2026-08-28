@@ -7,11 +7,11 @@ import youtubeIcon from "/assets/shared/desktop/icon-youtube.svg";
 
 function Footer() {
   return (
-    <footer className="relative py-9.5 px-6 flex flex-col gap-16.5">
+    <footer className="relative py-14.5 px-6 flex flex-col gap-16.5">
       <section 
         className="
           bg-peach bg-[url('/assets/shared/desktop/bg-pattern-call-to-action.svg')] bg-position-[44%_center] 
-          bg-no-repeat rounded-[15px] py-16 px-6 flex flex-col items-center gap-8
+          bg-no-repeat rounded-[15px] py-16 px-6 flex flex-col items-center gap-8 z-10
         "
       >
         <div className="flex flex-col gap-4 text-center text-white">
@@ -30,19 +30,19 @@ function Footer() {
         </button>
       </section>
 
-      <section className="flex flex-col gap-8 items-center text-center">
+      <section className="flex flex-col gap-9 items-center text-center z-10">
         <img src={lightLogo} alt="" className="h-6.75" />
 
         <hr className="w-full text-white/10" />
 
-        <nav className="flex flex-col gap-8 uppercase text-[14px] leading-3.5 tracking-[2px] text-white">
+        <nav className="flex flex-col gap-9 uppercase text-[14px] leading-3.5 tracking-[2px] text-white">
           <a href="#">Our Company</a>
           <a href="#">Locations</a>
           <a href="#">Contact</a>
         </nav>
 
         <address>
-          <p className="opacity-50 not-italic">
+          <p className="text-white/50 not-italic">
             <strong>Designo Central Office</strong>
             <br />
             3886 Wellington Street
@@ -52,7 +52,7 @@ function Footer() {
         </address>
 
         <address>
-          <p className="opacity-50 not-italic">
+          <p className="text-white/50 not-italic">
             <strong>Contact Us (Central Office)</strong>
             <br />
             P : +1 253-863-8967
@@ -79,6 +79,8 @@ function Footer() {
           </a>
         </nav>
       </section>
+
+      <div className="absolute z-0 bottom-0 inset-x-0 bg-black h-203.75" />
     </footer>
   )
 }

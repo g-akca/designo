@@ -62,19 +62,19 @@ function Footer() {
         </address>
 
         <nav className="flex gap-4 items-center">
-          <a href="#">
+          <a href="#" aria-label="Facebook">
             <img src={facebookIcon} alt="" />
           </a>
-          <a href="#">
+          <a href="#" aria-label="YouTube">
             <img src={youtubeIcon} alt="" />
           </a>
-          <a href="#">
+          <a href="#" aria-label="Twitter">
             <img src={twitterIcon} alt="" />
           </a>
-          <a href="#">
+          <a href="#" aria-label="Pinterest">
             <img src={pinterestIcon} alt="" />
           </a>
-          <a href="#">
+          <a href="#" aria-label="Instagram">
             <img src={instagramIcon} alt="" />
           </a>
         </nav>

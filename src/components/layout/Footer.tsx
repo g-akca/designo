@@ -1,3 +1,10 @@
+import lightLogo from "/assets/shared/desktop/logo-light.png";
+import facebookIcon from "/assets/shared/desktop/icon-facebook.svg";
+import instagramIcon from "/assets/shared/desktop/icon-instagram.svg";
+import pinterestIcon from "/assets/shared/desktop/icon-pinterest.svg";
+import twitterIcon from "/assets/shared/desktop/icon-twitter.svg";
+import youtubeIcon from "/assets/shared/desktop/icon-youtube.svg";
+
 function Footer() {
   return (
     <footer className="relative py-9.5 px-6 flex flex-col gap-16.5">
@@ -21,6 +28,56 @@ function Footer() {
         >
           Get in touch
         </button>
+      </section>
+
+      <section className="flex flex-col gap-8 items-center text-center">
+        <img src={lightLogo} alt="" className="h-6.75" />
+
+        <hr className="w-full text-white/10" />
+
+        <nav className="flex flex-col gap-8 uppercase text-[14px] leading-3.5 tracking-[2px] text-white">
+          <a href="#">Our Company</a>
+          <a href="#">Locations</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <address>
+          <p className="opacity-50 not-italic">
+            <strong>Designo Central Office</strong>
+            <br />
+            3886 Wellington Street
+            <br />
+            Toronto, Ontario M9C 3J5
+          </p>
+        </address>
+
+        <address>
+          <p className="opacity-50 not-italic">
+            <strong>Contact Us (Central Office)</strong>
+            <br />
+            P : +1 253-863-8967
+            <br />
+            M : contact@designo.co
+          </p>
+        </address>
+
+        <nav className="flex gap-4 items-center">
+          <a href="#">
+            <img src={facebookIcon} alt="" />
+          </a>
+          <a href="#">
+            <img src={youtubeIcon} alt="" />
+          </a>
+          <a href="#">
+            <img src={twitterIcon} alt="" />
+          </a>
+          <a href="#">
+            <img src={pinterestIcon} alt="" />
+          </a>
+          <a href="#">
+            <img src={instagramIcon} alt="" />
+          </a>
+        </nav>
       </section>
     </footer>
   )

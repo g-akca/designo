@@ -7,8 +7,8 @@ function AppDesignCard() {
       to="/app-design" 
       className="
         relative h-62.5 rounded-[15px] bg-[url('/assets/home/desktop/image-app-design.jpg')] 
-        bg-position-[calc(50%-50px)_center] bg-no-repeat flex flex-col justify-center 
-        items-center gap-3 text-center text-white uppercase font-medium
+        bg-position-[calc(50%-50px)_center] bg-no-repeat overflow-hidden flex flex-col 
+        justify-center items-center gap-3 text-center text-white uppercase font-medium
       "
     >
       <div className="absolute inset-0 bg-[#000000]/55" />

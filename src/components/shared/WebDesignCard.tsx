@@ -7,7 +7,7 @@ function WebDesignCard() {
       to="/web-design" 
       className="
         relative h-62.5 rounded-[15px] bg-[url('/assets/home/desktop/image-web-design-small.jpg')] 
-        bg-size-[auto_500px] bg-position-[calc(50%-150px)_bottom] bg-no-repeat flex flex-col 
+        bg-size-[auto_500px] bg-position-[calc(50%-150px)_bottom] bg-no-repeat overflow-hidden flex flex-col 
         justify-center items-center gap-3 text-center text-white uppercase font-medium
       "
     >

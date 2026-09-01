@@ -11,7 +11,7 @@ function WebDesignCard() {
         justify-center items-center gap-3 text-center text-white uppercase font-medium
       "
     >
-      <div className="absolute inset-0 bg-[#000000]/60" />
+      <div className="absolute inset-0 bg-[#000000]/55" />
 
       <h2 className="z-10 text-[28px] leading-9 tracking-[1.4px]">Web Design</h2>
 

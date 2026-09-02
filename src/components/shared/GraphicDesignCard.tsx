@@ -7,7 +7,7 @@ function GraphicDesignCard() {
       to="/graphic-design" 
       className="
         relative h-62.5 rounded-[15px] bg-[url('/assets/home/desktop/image-graphic-design.jpg')] 
-        bg-top-left bg-no-repeat overflow-hidden flex flex-col 
+        bg-top-left bg-no-repeat bg-cover overflow-hidden flex flex-col 
         justify-center items-center gap-3 text-center text-white uppercase font-medium
       "
     >

@@ -1,3 +1,4 @@
+import CompanyValues from "../components/home/CompanyValues";
 import HomeHero from "../components/home/HomeHero";
 import AppDesignCard from "../components/shared/AppDesignCard";
 import GraphicDesignCard from "../components/shared/GraphicDesignCard";
@@ -13,6 +14,8 @@ function Home() {
         <AppDesignCard />
         <GraphicDesignCard />
       </div>
+
+      <CompanyValues />
     </div>
   )
 }

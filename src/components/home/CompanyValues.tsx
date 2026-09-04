@@ -3,7 +3,13 @@ import passionateImg from "/assets/home/desktop/illustration-passionate.svg";
 import resourcefulImg from "/assets/home/desktop/illustration-resourceful.svg";
 import friendlyImg from "/assets/home/desktop/illustration-friendly.svg";
 
-const values = [
+type ValueItem = {
+  img: string;
+  title: string;
+  description: string;
+};
+
+const values: ValueItem[] = [
   {
     img: passionateImg,
     title: "Passionate",

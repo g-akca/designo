@@ -1,10 +1,11 @@
 type CompanyValueProps = {
   img: string;
+  patternStyle?: string;
   title: string;
   description: string;
 };
 
-function CompanyValue({ img, title, description }: CompanyValueProps) {
+function CompanyValue({ img, patternStyle, title, description }: CompanyValueProps) {
   return (
     <div className="flex flex-col gap-12 items-center">
       <img src={img} alt="" className="w-50.5" />

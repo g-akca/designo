@@ -6,8 +6,8 @@ function GraphicDesignCard() {
     <Link 
       to="/graphic-design" 
       className="
-        relative h-62.5 rounded-[15px] bg-[url('/assets/home/desktop/image-graphic-design.jpg')] 
-        bg-top-left bg-no-repeat bg-cover overflow-hidden flex flex-col 
+        relative h-62.5 rounded-[15px] bg-[url('/assets/home/mobile/image-graphic-design.jpg')] 
+        bg-center bg-cover bg-no-repeat overflow-hidden flex flex-col 
         justify-center items-center gap-3 text-center text-white uppercase font-medium
       "
     >

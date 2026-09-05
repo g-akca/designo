@@ -6,8 +6,8 @@ function WebDesignCard() {
     <Link 
       to="/web-design" 
       className="
-        relative h-62.5 rounded-[15px] bg-[url('/assets/home/desktop/image-web-design-small.jpg')] 
-        bg-bottom bg-cover bg-no-repeat overflow-hidden flex flex-col
+        relative h-62.5 rounded-[15px] bg-[url('/assets/home/mobile/image-web-design.jpg')] 
+        bg-center bg-cover bg-no-repeat overflow-hidden flex flex-col
         justify-center items-center gap-3 text-center text-white uppercase font-medium
       "
     >

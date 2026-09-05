@@ -6,7 +6,7 @@ function AppDesignCard() {
     <Link 
       to="/app-design" 
       className="
-        relative h-62.5 rounded-[15px] bg-[url('/assets/home/desktop/image-app-design.jpg')] 
+        relative h-62.5 rounded-[15px] bg-[url('/assets/home/mobile/image-app-design.jpg')] 
         bg-center bg-cover bg-no-repeat overflow-hidden flex flex-col 
         justify-center items-center gap-3 text-center text-white uppercase font-medium
       "

@@ -29,7 +29,7 @@ const values: ValueItem[] = [
 
 function CompanyValues() {
   return (
-    <section className="flex flex-col gap-20">
+    <section className="px-6 flex flex-col gap-20 items-center">
       {values.map((val) => (
         <CompanyValue
           key={val.title}

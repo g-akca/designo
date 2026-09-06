@@ -4,7 +4,7 @@ import MainRouter from "./routers/MainRouter";
 
 function App() {
   return (
-    <div className="text-base leading-base text-dark-grey min-h-screen bg-white flex flex-col">
+    <div className="text-base leading-base text-dark-grey min-h-screen bg-white flex flex-col gap-24">
       <Header />
 
       <main className="grow pt-24">

@@ -3,7 +3,7 @@ import FooterInfo from "./FooterInfo";
 
 function Footer() {
   return (
-    <footer className="relative py-14.5 px-6 flex flex-col gap-16.5">
+    <footer className="relative pb-14.5 px-6 flex flex-col gap-16.5">
       <FooterCTA />
 
       <FooterInfo />

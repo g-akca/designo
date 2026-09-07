@@ -12,7 +12,11 @@ function App() {
         <div className="fixed inset-0 z-40 bg-black/50" />
       )}
 
-      <Header />
+      <Header 
+        isMenuOpen={isMenuOpen} 
+        openMenu={() => setIsMenuOpen(true)}
+        closeMenu={() => setIsMenuOpen(false)}
+      />
 
       <main className="grow pt-24">
         <MainRouter />

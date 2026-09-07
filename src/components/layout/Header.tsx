@@ -1,4 +1,5 @@
 import hamburgerIcon from "/assets/shared/mobile/icon-hamburger.svg";
+import closeIcon from "/assets/shared/mobile/icon-close.svg";
 import darkLogo from "/assets/shared/desktop/logo-dark.png";
 
 type HeaderProps = {
@@ -12,9 +13,15 @@ function Header({ isMenuOpen, openMenu, closeMenu }: HeaderProps) {
     <header className="fixed z-50 top-0 inset-x-0 bg-white h-24 px-6 flex justify-between items-center gap-5">
       <img src={darkLogo} alt="Designo logo" className="max-w-50.5 min-w-0 shrink" />
 
-      <button type="button" aria-label="Open menu">
-        <img src={hamburgerIcon} alt="" className="w-6" />
-      </button>
+      {isMenuOpen ? (
+        <button type="button" onClick={closeMenu} aria-label="Close menu">
+          <img src={closeIcon} alt="" className="w-5" />
+        </button>
+      ) : (
+        <button type="button" onClick={openMenu} aria-label="Open menu">
+          <img src={hamburgerIcon} alt="" className="w-6" />
+        </button>
+      )}
     </header>
   )
 }

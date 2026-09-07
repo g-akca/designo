@@ -4,7 +4,7 @@ import MainRouter from "./routers/MainRouter";
 import { useState } from "react";
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="text-base leading-base text-dark-grey min-h-screen bg-white flex flex-col gap-24">

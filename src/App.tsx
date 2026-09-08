@@ -7,9 +7,9 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="text-base leading-base text-dark-grey min-h-screen bg-white flex flex-col gap-24">
+    <div className="text-base leading-base text-dark-grey min-h-screen bg-white flex flex-col gap-24 tablet:gap-16 tablet:pt-16">
       {isMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-black/50" />
+        <div className="fixed inset-0 z-40 bg-black/50 tablet:hidden" />
       )}
 
       <Header 
@@ -18,7 +18,7 @@ function App() {
         closeMenu={() => setIsMenuOpen(false)}
       />
 
-      <main className="grow pt-24">
+      <main className="grow pt-24 tablet:pt-0">
         <MainRouter />
       </main>
 

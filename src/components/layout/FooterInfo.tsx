@@ -4,6 +4,7 @@ import instagramIcon from "/assets/shared/desktop/icon-instagram.svg";
 import pinterestIcon from "/assets/shared/desktop/icon-pinterest.svg";
 import twitterIcon from "/assets/shared/desktop/icon-twitter.svg";
 import youtubeIcon from "/assets/shared/desktop/icon-youtube.svg";
+import { NavLink } from "react-router";
 
 function FooterInfo() {
   return (
@@ -12,10 +13,20 @@ function FooterInfo() {
 
       <hr className="w-full text-white/10" />
 
-      <nav className="flex flex-col gap-9 uppercase text-[14px] leading-3.5 tracking-[2px] text-white">
-        <a href="#">Our Company</a>
-        <a href="#">Locations</a>
-        <a href="#">Contact</a>
+      <nav>
+        <ul className="flex flex-col gap-9 uppercase text-[14px] leading-3.5 tracking-[2px] text-white">
+          <li>
+            <NavLink to="about">Our Company</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="locations">Locations</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="contact">Contact</NavLink>
+          </li>
+        </ul>
       </nav>
 
       <address>

@@ -4,8 +4,8 @@ function HomeHero() {
   return (
     <section 
       className="
-        bg-peach bg-[url('/assets/home/desktop/bg-pattern-hero-home.svg')] bg-left bg-no-repeat 
-        px-6 pt-20 h-210.75 relative overflow-hidden
+        bg-peach bg-[url('/assets/home/desktop/bg-pattern-hero-home.svg')] bg-left 
+        bg-no-repeat px-6 pt-20 pb-108 relative overflow-hidden
       "
     >
       <div className="flex flex-col items-center gap-6">

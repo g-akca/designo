@@ -9,13 +9,15 @@ function Home() {
     <div className="flex flex-col gap-30">
       <HomeHero />
 
-      <div className="px-6 flex flex-col gap-6">
-        <WebDesignCard />
-        <AppDesignCard />
-        <GraphicDesignCard />
-      </div>
+      <div className="px-6 flex flex-col gap-30">
+        <div className="flex flex-col gap-6">
+          <WebDesignCard />
+          <AppDesignCard />
+          <GraphicDesignCard />
+        </div>
 
-      <CompanyValues />
+        <CompanyValues />
+      </div>
     </div>
   )
 }

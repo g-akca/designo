@@ -9,13 +9,13 @@ type CompanyValueProps = {
 
 function CompanyValue({ img, patternStyle, title, description }: CompanyValueProps) {
   return (
-    <div className="flex flex-col gap-12 items-center">
-      <div className="relative w-50.5">
+    <div className="flex flex-col gap-12 items-center tablet:grid tablet:grid-cols-[202px_auto]">
+      <div className="relative w-50.5 tablet:w-full">
         <img src={circlePattern} alt="" className={`absolute w-full ${patternStyle ?? ""}`} />
         <img src={img} alt="" className="relative z-10 max-w-50.25" />
       </div>
 
-      <div className="flex flex-col gap-8 text-center">
+      <div className="flex flex-col gap-8 text-center tablet:gap-4 tablet:text-start">
         <h2 className="font-medium text-[20px] leading-base tracking-[5px] uppercase">{title}</h2>
 
         <p>{description}</p>

@@ -14,7 +14,7 @@ function Header({ isMenuOpen, openMenu, closeMenu }: HeaderProps) {
   return (
     <header className="fixed z-50 top-0 inset-x-0 flex flex-col tablet:static">
       <div className="bg-white h-24 px-6 flex justify-between items-center gap-5 tablet:h-auto tablet:px-0">
-        <img src={darkLogo} alt="Designo logo" className="max-w-50.5 min-w-0 shrink" />
+        <img src={darkLogo} alt="Designo logo" className="max-w-50.5 min-w-0 shrink desktop:max-w-49" />
 
         {isMenuOpen ? (
           <button type="button" onClick={closeMenu} aria-label="Close menu">

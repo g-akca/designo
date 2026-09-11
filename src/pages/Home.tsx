@@ -6,7 +6,7 @@ import WebDesignCard from "../components/shared/WebDesignCard";
 
 function Home() {
   return (
-    <div className="flex flex-col gap-30 tablet:px-9.75">
+    <div className="flex flex-col gap-30">
       <HomeHero />
 
       <div className="px-6 flex flex-col gap-30 tablet:px-0">

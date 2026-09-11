@@ -1,16 +1,21 @@
 import { Link } from "react-router";
 import arrowIcon from "/assets/shared/desktop/icon-right-arrow.svg";
 
-function WebDesignCard() {
+type WebDesignCardProps = {
+  className?: string;
+};
+
+function WebDesignCard({ className = "" }: WebDesignCardProps) {
   return (
     <Link 
       to="/web-design" 
-      className="
+      className={`
         relative p-6 rounded-[15px] bg-[url('/assets/home/mobile/image-web-design.jpg')] 
         bg-center bg-cover bg-no-repeat overflow-hidden flex flex-col
         justify-center items-center gap-3 text-center text-white uppercase font-medium
         tablet:bg-[url('/assets/home/tablet/image-web-design.jpg')] tablet:gap-6.5
-      "
+        ${className}
+      `}
     >
       <div className="absolute inset-0 bg-[#000000]/55" />
 

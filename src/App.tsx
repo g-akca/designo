@@ -17,7 +17,7 @@ function App() {
         <div className="fixed inset-0 z-40 bg-black/50 tablet:hidden" />
       )}
 
-      <div className="flex flex-col gap-24 tablet:gap-16 tablet:pt-16 tablet:px-9.75 desktop:px-0 desktop:self-center desktop:max-w-277.5">
+      <div className="flex flex-col gap-16 tablet:pt-16 tablet:px-9.75 desktop:px-0 desktop:self-center desktop:max-w-277.5">
         <Header 
           isMenuOpen={isMenuOpen} 
           openMenu={() => setIsMenuOpen(true)}

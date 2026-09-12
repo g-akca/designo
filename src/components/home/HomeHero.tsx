@@ -6,7 +6,7 @@ function HomeHero() {
       className="
         bg-peach bg-[url('/assets/home/desktop/bg-pattern-hero-home.svg')] bg-left 
         bg-no-repeat px-6 pt-20 pb-108 relative overflow-hidden tablet:rounded-[15px]
-        tablet:bg-position-[170px_center] tablet:pt-15 tablet:pb-114.5
+        tablet:bg-position-[right_-124px_center] tablet:pt-15 tablet:pb-114.5
       "
     >
       <div className="flex flex-col items-center gap-6 tablet:gap-4.75">

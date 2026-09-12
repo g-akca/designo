@@ -6,11 +6,12 @@ function HomeHero() {
       className="
         bg-peach bg-[url('/assets/home/desktop/bg-pattern-hero-home.svg')] bg-left 
         bg-no-repeat px-6 pt-20 pb-108 relative overflow-hidden tablet:rounded-[15px]
-        tablet:bg-position-[right_-124px_center] tablet:pt-15 tablet:pb-114.5
+        tablet:bg-position-[right_-124px_center] tablet:pt-15 tablet:pb-114.5 desktop:bg-right 
+        desktop:h-160 desktop:pb-15 desktop:px-23.75 desktop:flex desktop:items-center
       "
     >
-      <div className="flex flex-col items-center gap-6 tablet:gap-4.75">
-        <div className="flex flex-col items-center gap-7 text-center text-white">
+      <div className="flex flex-col items-center gap-6 tablet:gap-4.75 desktop:items-start desktop:gap-10">
+        <div className="flex flex-col items-center gap-7 text-center text-white desktop:items-start desktop:gap-8.5 desktop:text-start">
           <h2 className="max-w-145 font-medium text-[32px] leading-9 tablet:text-[48px] tablet:leading-12">
             Award-winning custom designs and digital branding solutions
           </h2>
@@ -32,7 +33,10 @@ function HomeHero() {
       <img 
         src={heroPhone} 
         alt="" 
-        className="absolute -bottom-89.5 left-1/2 -translate-x-1/2 max-w-none w-150 tablet:-bottom-89 tablet:w-156" 
+        className="
+          absolute -bottom-89.5 left-1/2 -translate-x-1/2 max-w-none w-150 tablet:-bottom-89 tablet:w-156
+          desktop:-bottom-60 desktop:left-auto desktop:translate-x-0 desktop:-right-17
+        " 
       />
     </section>
   )

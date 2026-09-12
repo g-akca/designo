@@ -9,7 +9,8 @@ function GraphicDesignCard() {
         relative p-6 rounded-[15px] bg-[url('/assets/home/mobile/image-graphic-design.jpg')] 
         bg-center bg-cover bg-no-repeat overflow-hidden flex flex-col 
         justify-center items-center gap-3 text-center text-white uppercase font-medium
-        tablet:bg-[url('/assets/home/tablet/image-graphic-design.jpg')] tablet:gap-6.5
+        tablet:bg-[url('/assets/home/tablet/image-graphic-design.jpg')] tablet:gap-6.5 
+        desktop:bg-[url('/assets/home/desktop/image-graphic-design.jpg')] desktop:gap-6
       "
     >
       <div className="absolute inset-0 bg-[#000000]/55" />

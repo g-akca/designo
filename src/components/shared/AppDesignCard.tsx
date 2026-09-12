@@ -10,6 +10,7 @@ function AppDesignCard() {
         bg-center bg-cover bg-no-repeat overflow-hidden flex flex-col 
         justify-center items-center gap-3 text-center text-white uppercase font-medium
         tablet:bg-[url('/assets/home/tablet/image-app-design.jpg')] tablet:gap-6.5
+        desktop:bg-[url('/assets/home/desktop/image-app-design.jpg')] desktop:gap-6
       "
     >
       <div className="absolute inset-0 bg-[#000000]/55" />

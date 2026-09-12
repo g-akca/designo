@@ -13,8 +13,13 @@ function WebDesignCard({ className = "" }: WebDesignCardProps) {
         relative p-6 rounded-[15px] bg-[url('/assets/home/mobile/image-web-design.jpg')] 
         bg-center bg-cover bg-no-repeat overflow-hidden flex flex-col
         justify-center items-center gap-3 text-center text-white uppercase font-medium
-        tablet:bg-[url('/assets/home/tablet/image-web-design.jpg')] tablet:gap-6.5
-        ${className}
+        tablet:bg-[url('/assets/home/tablet/image-web-design.jpg')] tablet:gap-6.5 
+        ${className ? 
+          "desktop:bg-[url('/assets/home/desktop/image-web-design-large.jpg')]" 
+          : 
+          "desktop:bg-[url('/assets/home/desktop/image-web-design-small.jpg')]"
+        } 
+        desktop:gap-6 ${className}
       `}
     >
       <div className="absolute inset-0 bg-[#000000]/55" />

@@ -32,7 +32,7 @@ const values: ValueItem[] = [
 
 function CompanyValues() {
   return (
-    <section className="flex flex-col gap-20 items-center tablet:items-stretch tablet:gap-8">
+    <section className="flex flex-col gap-20 items-center tablet:items-stretch tablet:gap-8 desktop:grid desktop:grid-cols-3 desktop:gap-7.5">
       {values.map((val) => (
         <CompanyValue
           key={val.title}

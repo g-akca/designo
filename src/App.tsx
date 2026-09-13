@@ -24,7 +24,7 @@ function App() {
           closeMenu={() => setIsMenuOpen(false)}
         />
 
-        <main className="pt-24 tablet:pt-0">
+        <main className="z-10 pt-24 tablet:pt-0">
           <MainRouter />
         </main>
       </div>

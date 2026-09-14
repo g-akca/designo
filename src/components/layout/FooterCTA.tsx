@@ -1,3 +1,5 @@
+import PrimaryButton from "../shared/PrimaryButton";
+
 function FooterCTA() {
   return (
     <section 
@@ -16,15 +18,9 @@ function FooterCTA() {
         </p>
       </div>
 
-      <button 
-        type="button" 
-        className="
-          bg-white rounded-lg w-38 h-14 uppercase font-medium text-[15px] leading-5.5 
-          tracking-[1px] hover:bg-light-peach hover:text-white transition-all cursor-pointer
-        "
-      >
+      <PrimaryButton>
         Get in touch
-      </button>
+      </PrimaryButton>
     </section>
   )
 }

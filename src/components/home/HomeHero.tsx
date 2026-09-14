@@ -1,3 +1,4 @@
+import PrimaryButton from "../shared/PrimaryButton";
 import heroPhone from "/assets/home/desktop/image-hero-phone.png";
 
 function HomeHero() {
@@ -27,15 +28,9 @@ function HomeHero() {
           </p>
         </div>
 
-        <button 
-          type="button" 
-          className="
-            z-10 bg-white rounded-lg w-38 h-14 uppercase font-medium text-[15px] leading-5.5 
-            tracking-[1px] hover:bg-light-peach hover:text-white transition-all cursor-pointer
-          "
-        >
+        <PrimaryButton>
           Learn more
-        </button>
+        </PrimaryButton>
       </div>
 
       <img 

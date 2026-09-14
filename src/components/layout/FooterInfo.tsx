@@ -51,19 +51,19 @@ function FooterInfo() {
         </div>
 
         <nav className="flex gap-4 items-center">
-          <a href="#" aria-label="Facebook">
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook">
             <FacebookIcon />
           </a>
-          <a href="#" aria-label="YouTube">
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube">
             <YouTubeIcon />
           </a>
-          <a href="#" aria-label="Twitter">
+          <a href="https://x.com/" target="_blank" rel="noreferrer" aria-label="X">
             <TwitterIcon />
           </a>
-          <a href="#" aria-label="Pinterest">
+          <a href="https://www.pinterest.com/" target="_blank" rel="noreferrer" aria-label="Pinterest">
             <PinterestIcon />
           </a>
-          <a href="#" aria-label="Instagram">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
             <InstagramIcon />
           </a>
         </nav>

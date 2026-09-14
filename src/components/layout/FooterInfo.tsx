@@ -1,11 +1,11 @@
-import lightLogo from "/assets/shared/desktop/logo-light.png";
-import facebookIcon from "/assets/shared/desktop/icon-facebook.svg";
-import instagramIcon from "/assets/shared/desktop/icon-instagram.svg";
-import pinterestIcon from "/assets/shared/desktop/icon-pinterest.svg";
-import twitterIcon from "/assets/shared/desktop/icon-twitter.svg";
-import youtubeIcon from "/assets/shared/desktop/icon-youtube.svg";
-import FooterLinks from "./FooterLinks";
 import { NavLink } from "react-router";
+import lightLogo from "/assets/shared/desktop/logo-light.png";
+import FooterLinks from "./FooterLinks";
+import FacebookIcon from "./icons/FacebookIcon";
+import YouTubeIcon from "./icons/YoutubeIcon";
+import TwitterIcon from "./icons/TwitterIcon";
+import PinterestIcon from "./icons/PinterestIcon";
+import InstagramIcon from "./icons/InstagramIcon";
 
 function FooterInfo() {
   return (
@@ -52,19 +52,19 @@ function FooterInfo() {
 
         <nav className="flex gap-4 items-center">
           <a href="#" aria-label="Facebook">
-            <img src={facebookIcon} alt="" />
+            <FacebookIcon />
           </a>
           <a href="#" aria-label="YouTube">
-            <img src={youtubeIcon} alt="" />
+            <YouTubeIcon />
           </a>
           <a href="#" aria-label="Twitter">
-            <img src={twitterIcon} alt="" />
+            <TwitterIcon />
           </a>
           <a href="#" aria-label="Pinterest">
-            <img src={pinterestIcon} alt="" />
+            <PinterestIcon />
           </a>
           <a href="#" aria-label="Instagram">
-            <img src={instagramIcon} alt="" />
+            <InstagramIcon />
           </a>
         </nav>
       </div>

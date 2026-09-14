@@ -6,14 +6,14 @@ function AppDesignCard() {
     <Link 
       to="/app-design" 
       className="
-        relative p-6 rounded-[15px] bg-[url('/assets/home/mobile/image-app-design.jpg')] 
+        relative group p-6 rounded-[15px] bg-[url('/assets/home/mobile/image-app-design.jpg')] 
         bg-center bg-cover bg-no-repeat overflow-hidden flex flex-col 
         justify-center items-center gap-3 text-center text-white uppercase font-medium
         tablet:bg-[url('/assets/home/tablet/image-app-design.jpg')] tablet:gap-6.5
         desktop:bg-[url('/assets/home/desktop/image-app-design.jpg')] desktop:gap-6
       "
     >
-      <div className="absolute inset-0 bg-[#000000]/55" />
+      <div className="absolute inset-0 bg-[#000000]/55 transition-all group-hover:bg-peach/80" />
 
       <h2 className="z-10 text-[28px] leading-9 tracking-[1.4px] tablet:text-[40px] tablet:leading-12 tablet:tracking-[2px]">
         App Design

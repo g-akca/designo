@@ -10,7 +10,7 @@ function WebDesignCard({ className = "" }: WebDesignCardProps) {
     <Link 
       to="/web-design" 
       className={`
-        relative p-6 rounded-[15px] bg-[url('/assets/home/mobile/image-web-design.jpg')] 
+        relative group p-6 rounded-[15px] bg-[url('/assets/home/mobile/image-web-design.jpg')] 
         bg-center bg-cover bg-no-repeat overflow-hidden flex flex-col
         justify-center items-center gap-3 text-center text-white uppercase font-medium
         tablet:bg-[url('/assets/home/tablet/image-web-design.jpg')] tablet:gap-6.5 
@@ -22,7 +22,7 @@ function WebDesignCard({ className = "" }: WebDesignCardProps) {
         desktop:gap-6 ${className}
       `}
     >
-      <div className="absolute inset-0 bg-[#000000]/55" />
+      <div className="absolute inset-0 bg-[#000000]/55 transition-all group-hover:bg-peach/80" />
 
       <h2 className="z-10 text-[28px] leading-9 tracking-[1.4px] tablet:text-[40px] tablet:leading-12 tablet:tracking-[2px]">
         Web Design

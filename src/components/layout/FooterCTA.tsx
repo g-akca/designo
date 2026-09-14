@@ -18,7 +18,10 @@ function FooterCTA() {
 
       <button 
         type="button" 
-        className="bg-white rounded-lg w-38 h-14 uppercase font-medium text-[15px] leading-5.5 tracking-[1px]"
+        className="
+          bg-white rounded-lg w-38 h-14 uppercase font-medium text-[15px] leading-5.5 
+          tracking-[1px] hover:bg-light-peach hover:text-white transition-all cursor-pointer
+        "
       >
         Get in touch
       </button>

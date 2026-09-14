@@ -5,12 +5,15 @@ import pinterestIcon from "/assets/shared/desktop/icon-pinterest.svg";
 import twitterIcon from "/assets/shared/desktop/icon-twitter.svg";
 import youtubeIcon from "/assets/shared/desktop/icon-youtube.svg";
 import FooterLinks from "./FooterLinks";
+import { NavLink } from "react-router";
 
 function FooterInfo() {
   return (
     <section className="flex flex-col gap-9 items-center text-center z-10 tablet:gap-10 tablet:items-stretch tablet:text-start">
       <div className="contents tablet:flex justify-between items-center">
-        <img src={lightLogo} alt="" className="h-6.75" />
+        <NavLink to="/">
+          <img src={lightLogo} alt="" className="h-6.75" />
+        </NavLink>
 
         <FooterLinks className="hidden tablet:block" />
       </div>

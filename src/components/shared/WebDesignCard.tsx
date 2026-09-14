@@ -22,7 +22,7 @@ function WebDesignCard({ className = "" }: WebDesignCardProps) {
         desktop:gap-6 ${className}
       `}
     >
-      <div className="absolute inset-0 bg-[#000000]/55 transition-all group-hover:bg-peach/80" />
+      <div className="absolute inset-0 bg-[#000000]/55 transition-all duration-300 group-hover:bg-peach/80" />
 
       <h2 className="z-10 text-[28px] leading-9 tracking-[1.4px] tablet:text-[40px] tablet:leading-12 tablet:tracking-[2px]">
         Web Design

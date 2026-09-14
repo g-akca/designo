@@ -11,7 +11,12 @@ function HomeHero() {
       "
     >
       <div className="flex flex-col items-center gap-6 tablet:gap-4.75 desktop:items-start desktop:gap-10">
-        <div className="flex flex-col items-center gap-7 text-center text-white desktop:items-start desktop:gap-8.5 desktop:text-start">
+        <div 
+          className="
+            z-10 flex flex-col items-center gap-7 text-center text-white 
+            desktop:items-start desktop:gap-8.5 desktop:text-start
+          "
+        >
           <h2 className="max-w-145 font-medium text-[32px] leading-9 tablet:text-[48px] tablet:leading-12">
             Award-winning custom designs and digital branding solutions
           </h2>
@@ -25,7 +30,7 @@ function HomeHero() {
         <button 
           type="button" 
           className="
-            bg-white rounded-lg w-38 h-14 uppercase font-medium text-[15px] leading-5.5 
+            z-10 bg-white rounded-lg w-38 h-14 uppercase font-medium text-[15px] leading-5.5 
             tracking-[1px] hover:bg-light-peach hover:text-white transition-all cursor-pointer
           "
         >

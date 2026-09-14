@@ -5,15 +5,15 @@ function Menu() {
     <nav className="bg-black px-6 py-12 tablet:hidden">
       <ul className="flex flex-col gap-8 text-[24px] leading-6.25 tracking-[2px] text-white uppercase">
         <li>
-          <NavLink to="about">Our Company</NavLink>
+          <NavLink to="/about" className="hover:underline">Our Company</NavLink>
         </li>
 
         <li>
-          <NavLink to="locations">Locations</NavLink>
+          <NavLink to="/locations" className="hover:underline">Locations</NavLink>
         </li>
 
         <li>
-          <NavLink to="contact">Contact</NavLink>
+          <NavLink to="/contact" className="hover:underline">Contact</NavLink>
         </li>
       </ul>
     </nav>

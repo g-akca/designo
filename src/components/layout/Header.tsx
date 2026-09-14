@@ -20,11 +20,11 @@ function Header({ isMenuOpen, openMenu, closeMenu }: HeaderProps) {
         </NavLink>
 
         {isMenuOpen ? (
-          <button type="button" onClick={closeMenu} aria-label="Close menu">
+          <button type="button" onClick={closeMenu} className="cursor-pointer" aria-label="Close menu">
             <img src={closeIcon} alt="" className="w-5 tablet:hidden" />
           </button>
         ) : (
-          <button type="button" onClick={openMenu} aria-label="Open menu">
+          <button type="button" onClick={openMenu} className="cursor-pointer" aria-label="Open menu">
             <img src={hamburgerIcon} alt="" className="w-6 tablet:hidden" />
           </button>
         )}

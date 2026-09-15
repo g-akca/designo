@@ -1,7 +1,7 @@
 import AppDesignCard from "../components/shared/AppDesignCard";
 import GraphicDesignCard from "../components/shared/GraphicDesignCard";
 import HeroSection from "../components/web_design/HeroSection";
-import WebDesignProjects from "../components/web_design/WebDesignProjects";
+import ProjectsSection from "../components/web_design/ProjectsSection";
 
 function WebDesign() {
   return (
@@ -9,7 +9,7 @@ function WebDesign() {
       <HeroSection />
 
       <div className="px-6 flex flex-col gap-24">
-        <WebDesignProjects />
+        <ProjectsSection />
 
         <div className="grid grid-rows-[repeat(2,250px)] gap-6">
           <AppDesignCard />

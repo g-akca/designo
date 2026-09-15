@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import MainNavLinks from "./MainNavLinks";
 
 type FooterLinksProps = {
   className?: string;
@@ -13,17 +13,7 @@ function FooterLinks({ className = "" }: FooterLinksProps) {
           text-white tablet:flex-row tablet:gap-10.5
         "
       >
-        <li>
-          <NavLink to="/about" className="hover:underline">Our Company</NavLink>
-        </li>
-
-        <li>
-          <NavLink to="/locations" className="hover:underline">Locations</NavLink>
-        </li>
-
-        <li>
-          <NavLink to="/contact" className="hover:underline">Contact</NavLink>
-        </li>
+        <MainNavLinks />
       </ul>
     </nav>
   )

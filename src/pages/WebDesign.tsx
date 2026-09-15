@@ -8,7 +8,7 @@ function WebDesign() {
     <div className="flex flex-col gap-24 tablet:gap-30">
       <HeroSection />
 
-      <div className="px-6 flex flex-col gap-24 tablet:gap-30">
+      <div className="px-6 flex flex-col gap-24 tablet:px-0 tablet:gap-30">
         <ProjectsSection />
 
         <div className="grid grid-rows-[repeat(2,250px)] gap-6 tablet:grid-rows-[repeat(2,200px)]">

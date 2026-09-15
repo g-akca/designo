@@ -41,7 +41,7 @@ const projects = [
 
 function ProjectsSection() {
   return (
-    <section className="flex flex-col gap-10">
+    <section className="flex flex-col gap-10 tablet:gap-8">
       {projects.map((proj) => (
         <ProjectCard
           key={proj.name}

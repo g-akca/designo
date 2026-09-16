@@ -9,14 +9,14 @@ type HeroSectionProps = {
 function HeroSection({ heading, intro, background = "web" }: HeroSectionProps) {
   return (
     <>
-      <img src={leafPattern} alt="" className="hidden desktop:block absolute left-0 top-70" />
+      <img src={leafPattern} alt="" className="hidden desktop:block absolute left-0 top-71.5" />
 
       <section 
         className={`
           relative min-h-80 bg-top-right bg-[url('/assets/web-design/desktop/bg-pattern-intro-web.svg')]
           bg-no-repeat bg-peach p-6 flex flex-col justify-center items-center gap-6 text-white text-center 
           tablet:min-h-63 tablet:rounded-[15px] tablet:[background-image:var(--hero-background)] 
-          tablet:bg-position-[-20px_center] ${background === "web" ? "desktop:bg-right" : "desktop:bg-left"}
+          tablet:bg-position-[-20px_center] ${background === "web" ? "desktop:bg-right" : "desktop:bg-position-[-60px_center]"}
         `}
         style={{
           "--hero-background": `url('${import.meta.env.BASE_URL}assets/${background}-design/desktop/bg-pattern-intro-${background}.svg')`,

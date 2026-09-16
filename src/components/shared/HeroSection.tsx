@@ -3,7 +3,7 @@ import leafPattern from "/assets/shared/desktop/bg-pattern-leaf.svg";
 type HeroSectionProps = {
   heading: string;
   intro: string;
-  background?: string;
+  background?: "web" | "app" | "graphic";
 };
 
 function HeroSection({ heading, intro, background = "web" }: HeroSectionProps) {

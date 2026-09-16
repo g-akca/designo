@@ -40,7 +40,7 @@ const projects = [
 function AppDesign() {
   return (
     <div className="flex flex-col gap-24 tablet:gap-30 desktop:gap-40">
-      <HeroSection heading="App Design" intro="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips." />
+      <HeroSection background="app" heading="App Design" intro="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips." />
 
       <div className="px-6 flex flex-col gap-24 tablet:px-0 tablet:gap-30 desktop:gap-40">
         <ProjectsSection projects={projects} />

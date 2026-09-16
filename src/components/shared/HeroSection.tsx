@@ -3,19 +3,24 @@ import leafPattern from "/assets/shared/desktop/bg-pattern-leaf.svg";
 type HeroSectionProps = {
   heading: string;
   intro: string;
+  background?: string;
 };
 
-function HeroSection({ heading, intro }: HeroSectionProps) {
+function HeroSection({ heading, intro, background = "web" }: HeroSectionProps) {
   return (
     <>
       <img src={leafPattern} alt="" className="hidden desktop:block absolute left-0 top-70" />
 
       <section 
-        className="
-          relative min-h-80 bg-[url('/assets/web-design/desktop/bg-pattern-intro-web.svg')] bg-top-right 
-          bg-no-repeat bg-peach p-6 flex flex-col justify-center items-center gap-6 text-white 
-          text-center tablet:min-h-63 tablet:bg-position-[-20px_center] tablet:rounded-[15px] desktop:bg-right
-        "
+        className={`
+          relative min-h-80 bg-top-right bg-[url('/assets/web-design/desktop/bg-pattern-intro-web.svg')]
+          bg-no-repeat bg-peach p-6 flex flex-col justify-center items-center gap-6 text-white text-center 
+          tablet:min-h-63 tablet:rounded-[15px] tablet:[background-image:var(--hero-background)] 
+          tablet:bg-position-[-20px_center] ${background === "web" ? "desktop:bg-right" : "desktop:bg-left"}
+        `}
+        style={{
+          "--hero-background": `url('${import.meta.env.BASE_URL}assets/${background}-design/desktop/bg-pattern-intro-${background}.svg')`,
+        } as React.CSSProperties}
       >
         <h1 className="font-medium text-[32px] leading-9 tablet:text-[48px] tablet:leading-12">
           {heading}

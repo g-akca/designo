@@ -3,7 +3,7 @@ import leafPattern from "/assets/shared/desktop/bg-pattern-leaf.svg";
 function HeroSection() {
   return (
     <>
-      <img src={leafPattern} alt="" className="hidden desktop:block absolute left-0 top-50" />
+      <img src={leafPattern} alt="" className="hidden desktop:block absolute left-0 top-70" />
 
       <section 
         className="

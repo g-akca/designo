@@ -1,12 +1,12 @@
 import AppDesignCard from "../components/shared/AppDesignCard";
 import GraphicDesignCard from "../components/shared/GraphicDesignCard";
-import HeroSection from "../components/web-design/HeroSection";
+import HeroSection from "../components/shared/HeroSection";
 import ProjectsSection from "../components/web-design/ProjectsSection";
 
 function WebDesign() {
   return (
     <div className="flex flex-col gap-24 tablet:gap-30 desktop:gap-40">
-      <HeroSection />
+      <HeroSection heading="Web Design" intro="We build websites that serve as powerful marketing tools and bring memorable brand experiences." />
 
       <div className="px-6 flex flex-col gap-24 tablet:px-0 tablet:gap-30 desktop:gap-40">
         <ProjectsSection />

@@ -1,6 +1,11 @@
 import leafPattern from "/assets/shared/desktop/bg-pattern-leaf.svg";
 
-function HeroSection() {
+type HeroSectionProps = {
+  heading: string;
+  intro: string;
+};
+
+function HeroSection({ heading, intro }: HeroSectionProps) {
   return (
     <>
       <img src={leafPattern} alt="" className="hidden desktop:block absolute left-0 top-70" />
@@ -13,11 +18,11 @@ function HeroSection() {
         "
       >
         <h1 className="font-medium text-[32px] leading-9 tablet:text-[48px] tablet:leading-12">
-          Web Design
+          {heading}
         </h1>
 
         <p className="text-[15px] leading-6.25 tablet:text-base tablet:leading-base tablet:max-w-100">
-          We build websites that serve as powerful marketing tools and bring memorable brand experiences.
+          {intro}
         </p>
       </section>
     </>

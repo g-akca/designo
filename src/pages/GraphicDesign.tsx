@@ -27,13 +27,13 @@ const projects = [
 
 function GraphicDesign() {
   return (
-    <div className="flex flex-col gap-24">
+    <div className="flex flex-col gap-24 tablet:gap-30">
       <HeroSection background="graphic" heading="Graphic Design" intro="We deliver eye-catching branding materials that are tailored to meet your business objectives." />
 
-      <div className="px-6 flex flex-col gap-24">
+      <div className="px-6 flex flex-col gap-24 tablet:px-0 tablet:gap-30">
         <ProjectsSection projects={projects} />
 
-        <div className="grid grid-rows-[repeat(2,250px)] gap-6">
+        <div className="grid grid-rows-[repeat(2,250px)] gap-6 tablet:grid-rows-[repeat(2,200px)]">
           <AppDesignCard />
 
           <WebDesignCard />

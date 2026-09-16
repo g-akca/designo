@@ -4,7 +4,7 @@ function HeroSection() {
       className="
         min-h-80 bg-[url('/assets/web-design/desktop/bg-pattern-intro-web.svg')] bg-top-right 
         bg-no-repeat bg-peach p-6 flex flex-col justify-center items-center gap-6 text-white 
-        text-center tablet:min-h-63 tablet:bg-position-[-20px_center] tablet:rounded-[15px]
+        text-center tablet:min-h-63 tablet:bg-position-[-20px_center] tablet:rounded-[15px] desktop:bg-right
       "
     >
       <h1 className="font-medium text-[32px] leading-9 tablet:text-[48px] tablet:leading-12">

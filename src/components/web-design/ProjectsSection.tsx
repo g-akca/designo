@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../shared/ProjectCard";
 import expressImg from "/assets/web-design/desktop/image-express.jpg";
 import transferImg from "/assets/web-design/desktop/image-transfer.jpg";
 import photonImg from "/assets/web-design/desktop/image-photon.jpg";

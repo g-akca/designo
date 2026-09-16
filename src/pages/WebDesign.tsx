@@ -1,7 +1,7 @@
 import AppDesignCard from "../components/shared/AppDesignCard";
 import GraphicDesignCard from "../components/shared/GraphicDesignCard";
-import HeroSection from "../components/web_design/HeroSection";
-import ProjectsSection from "../components/web_design/ProjectsSection";
+import HeroSection from "../components/web-design/HeroSection";
+import ProjectsSection from "../components/web-design/ProjectsSection";
 
 function WebDesign() {
   return (

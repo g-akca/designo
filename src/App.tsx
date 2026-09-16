@@ -9,8 +9,8 @@ function App() {
   return (
     <div 
       className="
-        text-base leading-base text-dark-grey min-h-screen bg-white flex flex-col justify-between gap-24 tablet:gap-16 
-        desktop:gap-40 desktop:bg-[url('/assets/shared/desktop/bg-pattern-leaf.svg')] desktop:bg-position-[0_475px] desktop:bg-no-repeat
+        text-base leading-base text-dark-grey min-h-screen bg-white flex 
+        flex-col justify-between gap-24 tablet:gap-16 desktop:gap-40
       "
     >
       {isMenuOpen && (

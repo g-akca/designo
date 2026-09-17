@@ -2,7 +2,12 @@ import heroImg from "/assets/about/mobile/image-about-hero.jpg";
 
 function HeroSection() {
   return (
-    <div className="bg-peach flex flex-col bg-[url('/assets/about/mobile/bg-pattern-hero-about-mobile.svg')] bg-position-[right_180px]">
+    <div 
+      className="
+        bg-peach bg-[url('/assets/about/mobile/bg-pattern-hero-about-mobile.svg')] 
+        bg-position-[right_180px] bg-no-repeat flex flex-col
+      "
+    >
       <img src={heroImg} alt="" className="h-80 object-cover" />
 
       <div className="px-6 py-20 flex flex-col gap-6 items-center text-center text-white">

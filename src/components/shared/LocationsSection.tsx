@@ -7,6 +7,7 @@ const locations = [
   {
     name: "Canada",
     image: canadaImg,
+    patternStyle: "rotate-90",
   },
   {
     name: "Australia",
@@ -15,6 +16,7 @@ const locations = [
   {
     name: "United Kingdom",
     image: ukImg,
+    patternStyle: "-rotate-90",
   },
 ];
 
@@ -26,6 +28,7 @@ function LocationsSection() {
           key={loc.name}
           name={loc.name}
           image={loc.image}
+          patternStyle={loc.patternStyle}
         />
       ))}
     </section>

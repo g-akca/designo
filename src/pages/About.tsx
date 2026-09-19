@@ -7,7 +7,7 @@ import realDealImg from "/assets/about/mobile/image-real-deal.jpg";
 function About() {
   return (
     <div className="flex flex-col gap-30">
-      <div className="flex flex-col">
+      <div className="flex flex-col tablet:gap-30">
         <HeroSection />
 
         <StorySection

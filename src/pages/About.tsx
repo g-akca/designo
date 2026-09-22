@@ -8,8 +8,8 @@ import tabletRealDealImg from "/assets/about/tablet/image-real-deal.jpg";
 
 function About() {
   return (
-    <div className="flex flex-col gap-30">
-      <div className="flex flex-col tablet:gap-30">
+    <div className="flex flex-col gap-30 desktop:gap-40">
+      <div className="flex flex-col tablet:gap-30 desktop:gap-40">
         <HeroSection />
 
         <StorySection

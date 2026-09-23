@@ -28,11 +28,11 @@ function StorySection({ heading, story, image, tabletImage, desktopImage, isReve
       </picture>
 
       <div 
-        className="
+        className={`
           px-6 py-12 min-h-136.25 max-w-143 self-center flex flex-col justify-center 
           gap-6 text-center tablet:py-17 tablet:px-0 tablet:min-h-104 desktop:text-start
-          desktop:min-h-auto desktop:pr-32
-        "
+          desktop:min-h-auto ${isReversed ? "desktop:pl-32" : "desktop:pr-32"}
+        `}
       >
         <h2 className="text-[32px] leading-9 font-medium text-peach tablet:text-[40px] tablet:leading-12">{heading}</h2>
 

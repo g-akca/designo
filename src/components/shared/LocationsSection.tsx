@@ -22,7 +22,7 @@ const locations = [
 
 function LocationsSection() {
   return (
-    <section className="flex flex-col gap-12 items-center tablet:gap-20">
+    <section className="flex flex-col gap-12 items-center tablet:gap-20 desktop:grid desktop:grid-cols-3 desktop:gap-7.5">
       {locations.map((loc) => (
         <LocationItem 
           key={loc.name}

@@ -55,9 +55,12 @@ function Locations() {
   return (
     <div className="flex flex-col gap-30">
       <div className="flex flex-col gap-10">
-        <LocationCard />
-        <LocationCard />
-        <LocationCard />
+        {locations.map((loc) => (
+          <LocationCard 
+            key={loc.name} 
+            location={loc} 
+          />
+        ))}
       </div>
     </div>
   )

@@ -1,4 +1,4 @@
-import LocationCard from "../components/locations/LocationCard";
+import LocationSection from "../components/locations/LocationSection";
 import canadaImgTablet from "/assets/locations/tablet/image-map-canada.png";
 import canadaImgDesktop from "/assets/locations/desktop/image-map-canada.png";
 import australiaImgTablet from "/assets/locations/tablet/image-map-australia.png";
@@ -56,7 +56,7 @@ function Locations() {
     <div className="flex flex-col gap-30">
       <div className="flex flex-col gap-10">
         {locations.map((loc) => (
-          <LocationCard 
+          <LocationSection 
             key={loc.name} 
             location={loc} 
           />

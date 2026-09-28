@@ -1,4 +1,4 @@
-type LocationCardProps = {
+type LocationSectionProps = {
   location: {
     name: string;
     tabletImg: string;
@@ -15,7 +15,7 @@ type LocationCardProps = {
   };
 };
 
-function LocationCard({ location }: LocationCardProps) {
+function LocationSection({ location }: LocationSectionProps) {
   return (
     <div className="flex flex-col bg-[#FDF3F0]">
       <picture>
@@ -54,4 +54,4 @@ function LocationCard({ location }: LocationCardProps) {
   )
 }
 
-export default LocationCard;
+export default LocationSection;

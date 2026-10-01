@@ -54,7 +54,7 @@ const locations = [
 function Locations() {
   return (
     <div className="flex flex-col gap-30 tablet:gap-40">
-      <div className="flex flex-col gap-10 tablet:gap-30">
+      <div className="flex flex-col gap-10 tablet:gap-30 desktop:gap-8">
         {locations.map((loc) => (
           <LocationSection 
             key={loc.name} 

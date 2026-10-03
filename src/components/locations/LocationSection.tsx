@@ -3,6 +3,7 @@ type LocationSectionProps = {
     name: string;
     tabletImg: string;
     desktopImg: string;
+    desktopReversed?: boolean;
     office: {
       name: string;
       addressLine1: string;
@@ -17,7 +18,12 @@ type LocationSectionProps = {
 
 function LocationSection({ location }: LocationSectionProps) {
   return (
-    <div className="flex flex-col tablet:gap-6 desktop:flex-row desktop:gap-7.5">
+    <div 
+      className={`
+        flex flex-col tablet:gap-6 desktop:gap-7.5
+        ${location.desktopReversed ? "desktop:flex-row-reverse" : "desktop:flex-row"}
+      `}
+    >
       <picture className="overflow-hidden tablet:rounded-[15px]">
         <source media="(min-width: 1440px)" srcSet={location.desktopImg} />
         <img src={location.tabletImg} alt="" className="h-80 w-full object-cover object-right tablet:h-81.5 desktop:min-h-81.5 desktop:w-87.5" />

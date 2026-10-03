@@ -11,6 +11,7 @@ const locations = [
     name: "Canada",
     tabletImg: canadaImgTablet,
     desktopImg: canadaImgDesktop,
+    desktopReversed: true,
     office: {
       name: "Designo Central Office",
       addressLine1: "3886 Wellington Street",
@@ -39,6 +40,7 @@ const locations = [
     name: "United Kingdom",
     tabletImg: ukImgTablet,
     desktopImg: ukImgDesktop,
+    desktopReversed: true,
     office: {
       name: "Designo UK Office",
       addressLine1: "13  Colorado Way",

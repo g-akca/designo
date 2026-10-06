@@ -9,8 +9,8 @@ function App() {
   return (
     <div 
       className="
-        text-base leading-base text-dark-grey min-h-screen bg-white flex 
-        flex-col justify-between gap-24 tablet:gap-16 desktop:gap-40
+        text-base leading-base text-dark-grey min-h-screen bg-white 
+        flex flex-col justify-between gap-24 desktop:gap-40
       "
     >
       {isMenuOpen && (

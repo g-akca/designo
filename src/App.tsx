@@ -2,16 +2,19 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import MainRouter from "./routers/MainRouter";
 import { useState } from "react";
+import { useLocation } from "react-router";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { pathname } = useLocation();
+  const isContactPage = pathname === "/contact";
 
   return (
     <div 
-      className="
+      className={`
         text-base leading-base text-dark-grey min-h-screen bg-white 
-        flex flex-col justify-between gap-24 desktop:gap-40
-      "
+        flex flex-col justify-between ${isContactPage ? "gap-44 desktop:gap-64" : "gap-28 desktop:gap-44"}
+      `}
     >
       {isMenuOpen && (
         <div className="fixed inset-0 z-40 bg-black/50 tablet:hidden" />

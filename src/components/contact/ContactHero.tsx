@@ -1,6 +1,15 @@
+import { useState } from "react";
 import PrimaryButton from "../shared/PrimaryButton";
 
 function ContactHero() {
+  const [submitted, setSubmitted] = useState(false);
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    event.currentTarget.reset();
+    setSubmitted(true);
+  }
+
   return (
     <section 
       className="
@@ -21,7 +30,10 @@ function ContactHero() {
         </p>
       </div>
 
-      <form className="flex flex-col gap-10 items-center tablet:items-end tablet:gap-6">
+      <form
+        className="flex flex-col gap-10 items-center tablet:items-end tablet:gap-6"
+        onSubmit={handleSubmit}
+      >
         <div className="self-stretch flex flex-col gap-3.5 text-white font-medium text-[15px] leading-6.25 desktop:gap-3">
           <input 
             id="name"
@@ -32,6 +44,7 @@ function ContactHero() {
               placeholder:leading-6.25 placeholder:font-medium focus:outline-none 
               focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
             " 
+            required
           />
 
           <input 
@@ -43,6 +56,7 @@ function ContactHero() {
               placeholder:leading-6.25 placeholder:font-medium focus:outline-none 
               focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
             " 
+            required
           />
 
           <input 
@@ -64,12 +78,18 @@ function ContactHero() {
               placeholder:leading-6.25 placeholder:font-medium focus:outline-none 
               focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
             "
+            required
           ></textarea>
         </div>
 
-        <PrimaryButton>
+        <PrimaryButton type="submit">
           Submit
         </PrimaryButton>
+        {submitted && (
+          <p className="text-white text-sm" role="status">
+            Thanks for your message. We’ll be in touch soon.
+          </p>
+        )}
       </form>
     </section>
   )

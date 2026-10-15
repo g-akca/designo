@@ -22,32 +22,48 @@ function ContactHero() {
       </div>
 
       <form className="flex flex-col gap-10 items-center tablet:items-end tablet:gap-6">
-        <div className="self-stretch flex flex-col gap-3.5 desktop:gap-3">
+        <div className="self-stretch flex flex-col gap-3.5 text-white font-medium text-[15px] leading-6.25 desktop:gap-3">
           <input 
             id="name"
             type="text" 
             placeholder="Name" 
-            className="border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px] placeholder:leading-6.25 tablet:px-6 desktop:px-4" 
+            className="
+              border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px] 
+              placeholder:leading-6.25 placeholder:font-medium focus:outline-none 
+              focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
+            " 
           />
 
           <input 
             id="email"
             type="email" 
             placeholder="Email Address" 
-            className="border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px] placeholder:leading-6.25 tablet:px-6 desktop:px-4" 
+            className="
+              border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px] 
+              placeholder:leading-6.25 placeholder:font-medium focus:outline-none 
+              focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
+            " 
           />
 
           <input 
             id="phone"
             type="tel" 
             placeholder="Phone" 
-            className="border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px] placeholder:leading-6.25 tablet:px-6 desktop:px-4" 
+            className="
+              border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px] 
+              placeholder:leading-6.25 placeholder:font-medium focus:outline-none 
+              focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
+            " 
           />
           
           <textarea 
             id="message"
             placeholder="Your Message"
-            className="border-b border-white min-h-25.5 p-3 placeholder:text-white/50 placeholder:text-[15px] placeholder:leading-6.25 tablet:px-6 desktop:px-4"
+            className="
+              border-b border-white min-h-25.5 p-3 placeholder:text-white/50 placeholder:text-[15px] 
+              placeholder:leading-6.25 placeholder:font-medium focus:outline-none 
+              focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
+            "
           ></textarea>
         </div>
 

@@ -1,13 +1,34 @@
 import { useState } from "react";
 import PrimaryButton from "../shared/PrimaryButton";
+import errorIcon from "/assets/contact/desktop/icon-error.svg";
 
 function ContactHero() {
   const [submitted, setSubmitted] = useState(false);
+  const [emptyFields, setEmptyFields] = useState<string[]>([]);
 
   function handleSubmit(event: React.SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
-    event.currentTarget.reset();
+
+    const form = event.currentTarget;
+    const emptyRequiredFields = Array.from(
+      form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>("[required]"),
+    )
+      .filter((field) => !field.value.trim())
+      .map((field) => field.id);
+
+    setEmptyFields(emptyRequiredFields);
+    setSubmitted(false);
+
+    if (emptyRequiredFields.length > 0 || !form.reportValidity()) {
+      return;
+    }
+
+    form.reset();
     setSubmitted(true);
+  }
+
+  function clearFieldError(fieldId: string) {
+    setEmptyFields((fields) => fields.filter((field) => field !== fieldId));
   }
 
   return (
@@ -33,58 +54,102 @@ function ContactHero() {
       <form
         className="flex flex-col gap-10 items-center tablet:items-end tablet:gap-6"
         onSubmit={handleSubmit}
+        noValidate
       >
         <div className="self-stretch flex flex-col gap-3.5 text-white font-medium text-[15px] leading-6.25 desktop:gap-3">
-          <input 
-            id="name"
-            type="text" 
-            placeholder="Name" 
-            className="
-              border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px] 
-              placeholder:leading-6.25 placeholder:font-medium focus:outline-none 
-              focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
-            " 
-            required
-          />
+          <div className="relative">
+            <input
+              id="name"
+              type="text"
+              placeholder="Name"
+              className="
+                w-full border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px]
+                placeholder:leading-6.25 placeholder:font-medium focus:outline-none
+                focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
+              "
+              onChange={() => clearFieldError("name")}
+              required
+            />
 
-          <input 
-            id="email"
-            type="email" 
-            placeholder="Email Address" 
-            className="
-              border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px] 
-              placeholder:leading-6.25 placeholder:font-medium focus:outline-none 
-              focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
-            " 
-            required
-          />
+            {emptyFields.includes("name") && (
+              <span
+                id="name-error"
+                className="absolute right-3 top-1/2 flex -translate-y-1/2 items-center gap-2 text-xs italic font-normal"
+                role="alert"
+              >
+                Can't be empty
+                <img src={errorIcon} alt="" />
+              </span>
+            )}
+          </div>
 
-          <input 
+          <div className="relative">
+            <input
+              id="email"
+              type="email"
+              placeholder="Email Address"
+              className="
+                w-full border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px]
+                placeholder:leading-6.25 placeholder:font-medium focus:outline-none
+                focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
+              "
+              onChange={() => clearFieldError("email")}
+              required
+            />
+
+            {emptyFields.includes("email") && (
+              <span
+                id="email-error"
+                className="absolute right-3 top-1/2 flex -translate-y-1/2 items-center gap-2 text-xs italic font-normal"
+                role="alert"
+              >
+                Can't be empty
+                <img src={errorIcon} alt="" />
+              </span>
+            )}
+          </div>
+
+          <input
             id="phone"
-            type="tel" 
-            placeholder="Phone" 
+            type="tel"
+            placeholder="Phone"
             className="
-              border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px] 
-              placeholder:leading-6.25 placeholder:font-medium focus:outline-none 
-              focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
-            " 
-          />
-          
-          <textarea 
-            id="message"
-            placeholder="Your Message"
-            className="
-              border-b border-white min-h-25.5 p-3 placeholder:text-white/50 placeholder:text-[15px] 
-              placeholder:leading-6.25 placeholder:font-medium focus:outline-none 
+              border-b border-white p-3 placeholder:text-white/50 placeholder:text-[15px]
+              placeholder:leading-6.25 placeholder:font-medium focus:outline-none
               focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
             "
-            required
-          ></textarea>
+          />
+          
+          <div className="relative">
+            <textarea
+              id="message"
+              placeholder="Your Message"
+              className="
+                w-full border-b border-white min-h-25.5 p-3 placeholder:text-white/50 placeholder:text-[15px]
+                placeholder:leading-6.25 placeholder:font-medium focus:outline-none
+                focus:shadow-[inset_0_-2px_0_0_white] tablet:px-6 desktop:px-4
+              "
+              onChange={() => clearFieldError("message")}
+              required
+            ></textarea>
+
+            {emptyFields.includes("message") && (
+              <span
+                id="message-error"
+                className="absolute right-3 top-3 flex items-center gap-2 text-xs italic font-normal"
+                role="alert"
+              >
+                Can't be empty
+                <img src={errorIcon} alt="" />
+              </span>
+            )}
+          </div>
         </div>
 
         <PrimaryButton type="submit">
           Submit
         </PrimaryButton>
+        
         {submitted && (
           <p className="text-white text-sm" role="status">
             Thanks for your message. We’ll be in touch soon.

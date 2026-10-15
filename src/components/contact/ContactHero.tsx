@@ -4,7 +4,7 @@ import PrimaryButton from "../shared/PrimaryButton";
 function ContactHero() {
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: React.SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
     event.currentTarget.reset();
     setSubmitted(true);

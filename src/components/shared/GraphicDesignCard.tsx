@@ -1,9 +1,9 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import arrowIcon from "/assets/shared/desktop/icon-right-arrow.svg";
 
 function GraphicDesignCard() {
   return (
-    <Link 
+    <NavLink 
       to="/graphic-design" 
       className="
         relative group p-6 rounded-[15px] bg-[url('/assets/home/mobile/image-graphic-design.jpg')] 
@@ -24,7 +24,7 @@ function GraphicDesignCard() {
 
         <img src={arrowIcon} alt="" />
       </div>
-    </Link>
+    </NavLink>
   );
 }
 

@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import arrowIcon from "/assets/shared/desktop/icon-right-arrow.svg";
 
 type WebDesignCardProps = {
@@ -7,7 +7,7 @@ type WebDesignCardProps = {
 
 function WebDesignCard({ className = "" }: WebDesignCardProps) {
   return (
-    <Link 
+    <NavLink 
       to="/web-design" 
       className={`
         relative group p-6 rounded-[15px] bg-[url('/assets/home/mobile/image-web-design.jpg')] 
@@ -33,7 +33,7 @@ function WebDesignCard({ className = "" }: WebDesignCardProps) {
 
         <img src={arrowIcon} alt="" />
       </div>
-    </Link>
+    </NavLink>
   );
 }
 

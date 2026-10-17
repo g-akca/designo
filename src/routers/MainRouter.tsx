@@ -6,6 +6,7 @@ import GraphicDesign from "../pages/GraphicDesign";
 import About from "../pages/About";
 import Locations from "../pages/Locations";
 import Contact from "../pages/Contact";
+import NotFound from "../pages/NotFound";
 
 function MainRouter() {
   return (
@@ -17,6 +18,7 @@ function MainRouter() {
       <Route path="/about" element={<About />} />
       <Route path="/locations" element={<Locations />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/*" element={<NotFound />} />
     </Routes>
   )
 }

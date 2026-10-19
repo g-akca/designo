@@ -18,7 +18,7 @@ function FooterCTA() {
         </p>
       </div>
 
-      <PrimaryButton>
+      <PrimaryButton to="/contact">
         Get in touch
       </PrimaryButton>
     </section>

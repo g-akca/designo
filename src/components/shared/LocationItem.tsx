@@ -15,7 +15,7 @@ function LocationItem({ name, image, patternStyle = "" }: LocationItemProps) {
       <div className="flex flex-col gap-8 items-center">
         <p className="text-[20px] leading-base uppercase font-medium tracking-[5px]">{name}</p>
 
-        <PrimaryButton color="peach">
+        <PrimaryButton color="peach" to="/locations">
           See Location
         </PrimaryButton>
       </div>

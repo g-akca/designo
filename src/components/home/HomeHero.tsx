@@ -32,7 +32,7 @@ function HomeHero() {
             </p>
           </div>
 
-          <PrimaryButton>
+          <PrimaryButton to="/about">
             Learn more
           </PrimaryButton>
         </div>

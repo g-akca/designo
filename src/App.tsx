@@ -1,13 +1,18 @@
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import MainRouter from "./routers/MainRouter";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { pathname } = useLocation();
+  const location = useLocation();
+  const { pathname } = location;
   const isContactPage = pathname === "/contact";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <div 

@@ -7,6 +7,8 @@ import WebDesignCard from "../components/shared/WebDesignCard";
 function Home() {
   return (
     <div className="flex flex-col gap-30 desktop:gap-40">
+      <h1 className="sr-only">Designo Home Page</h1>
+      
       <HomeHero />
 
       <div className="px-6 flex flex-col gap-30 tablet:px-0 desktop:gap-40">

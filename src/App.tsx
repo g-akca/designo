@@ -23,7 +23,10 @@ function App() {
       `}
     >
       {isMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-black/50 tablet:hidden" />
+        <button 
+          className="fixed inset-0 z-40 bg-black/50 tablet:hidden" 
+          onClick={() => setIsMenuOpen(false)}
+        />
       )}
 
       <div className="flex flex-col gap-16 w-full max-w-277.5 self-center tablet:pt-16 tablet:px-9.75 desktop:px-0 desktop:min-h-110">
